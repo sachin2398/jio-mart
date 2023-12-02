@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import style from "./ProductPage.module.css";
-
+import { useNavigate, useParams } from "react-router-dom"
 import percentage from "./images/percentageIcon.svg";
 import flash from "./images/flash.svg";
+
 
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
@@ -18,20 +19,25 @@ const Productpage = () => {
     const [data, setData] = useState([]);
     const [brand, setBrand] = useState("");
 
+    const navigate = useNavigate()
+
     const getData = async (url) => {
         try {
             const res = await axios.get(url);
-            console.log(res.data);
+            // console.log(res.data);
             setData(res.data);
         } catch (err) {
             console.log(err);
         }
     };
+
+
+
     useEffect(() => {
         getData(baseUrl);
     }, []);
 
-    console.log(brand);
+    // console.log(brand);
 
     const [value, setValue] = React.useState([5000, 70000]);
     const [valueDis, setValueDis] = React.useState([3, 50]);
@@ -44,8 +50,9 @@ const Productpage = () => {
         setValueDis(newValueDis);
     };
 
-    console.log(value);
-    console.log(valueDis);
+
+    // console.log(value);
+    // console.log(valueDis);
 
     return (
         <div className={style.product_page_container}>
@@ -180,24 +187,25 @@ const Productpage = () => {
                     <div className={style.product}>
                         {data.map((ele) => {
                             return (
-                                <div>
+                                <div onClick={() => { navigate(`/Products/${ele.id}`) }}>
                                     <div className={style.imagediv}>
                                         <img src={ele.image} alt="image" className={style.pic} />
                                     </div>
-                                    <div>
+                                    <div className={style.titlePic}>
                                         <p>{ele.title}</p>
                                         <p>
-                                            <b>{ele.price}</b>{" "}
+                                            <b>₹{ele.price}.00</b>{" "}
                                             <span className={style.line_through}>
                                                 ₹{Math.ceil((ele.price * 100) / (100 - ele.discount))}
                                             </span>{" "}
                                             <span>{ele.discount}% OFF</span>
                                         </p>
                                         <p>
-                                            <img src={percentage} alt="percentage" />
+
+                                            <img src={percentage} alt="percentage" />&nbsp;
                                             <span>Exchange Offer Available</span>
                                             <br />
-                                            <img src={flash} alt="flash" />
+                                            <img src={flash} alt="flash" />&nbsp;
                                             <span>Limited Time Deal</span>
                                         </p>
                                     </div>
