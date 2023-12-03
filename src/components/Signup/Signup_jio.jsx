@@ -4,22 +4,30 @@ import styles from "./signup.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { Link, Navigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { signup } from "../../redux/Signup_store/action";
-
-
+import { signin_G } from "../../redux/Login_store/action";
 
 function Signup_jio() {
   let [email, setEmail] = useState();
   let [password, setPassword] = useState();
-  let [userName,setUserName] = useState()
+  let [userName, setUserName] = useState();
   let dispatch = useDispatch();
+  let isauth = useSelector((store) => store.login_reducer.isAuth);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    dispatch(signup(email,password,userName))
+    dispatch(signup(email, password, userName));
   };
+
+  const handleGoogleAuth = () => {
+    dispatch(signin_G());
+  };
+
+  if (isauth) {
+    return <Navigate to={"/"} />;
+  }
 
   return (
     <div className={styles.Signup_container}>
@@ -50,7 +58,12 @@ function Signup_jio() {
           />
           <br />
           <br />
-          <button type="submit" className={styles.signup_btn}>Signup</button>
+          <button
+            type="submit"
+            className={styles.signup_btn}
+          >
+            Signup
+          </button>
         </form>
         <br />
         <br />
@@ -59,7 +72,10 @@ function Signup_jio() {
         <span className={styles.line}></span>
         <br />
         <br />
-        <button className={styles.signup_btn}>
+        <button
+          onClick={handleGoogleAuth}
+          className={styles.signup_btn}
+        >
           <FontAwesomeIcon
             icon={faGoogle}
             shake
@@ -68,7 +84,9 @@ function Signup_jio() {
         </button>
         <br />
         <br />
-        <p>Already have an Account <Link to={"/login"}>Login</Link></p>
+        <p>
+          Already have an Account <Link to={"/login"}>Login</Link>
+        </p>
       </div>
       <div className={styles.jio_img}>
         <img

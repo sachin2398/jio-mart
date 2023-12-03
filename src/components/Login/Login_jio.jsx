@@ -3,24 +3,28 @@ import jio_img from "../../assets/Login/jio_dan_dana_dan.webp";
 import styles from "./Login.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import {signin,signin_G} from "../../redux/Login_store/action"
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-
+import { signin, signin_G } from "../../redux/Login_store/action";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Navigate } from "react-router-dom";
 
 function Login_jio() {
   let [email, setEmail] = React.useState();
   let [password, setPassword] = React.useState();
+  let isauth = useSelector((store) => store.login_reducer.isAuth);
 
   let dispatch = useDispatch();
 
   const handleSignIn = (e) => {
     e.preventDefault();
-    dispatch(signin(email,password))
+    dispatch(signin(email, password));
   };
 
   const handleGoogleAuth = () => {
-    dispatch(signin_G())
+    dispatch(signin_G());
+  };
+
+  if (isauth) {
+    return <Navigate to={"/"} />;
   }
 
   return (
@@ -66,15 +70,21 @@ function Login_jio() {
         <span className={styles.line}></span>
         <br />
         <br />
-        <button onClick={handleGoogleAuth} className={styles.login_btn}>
+        <button
+          onClick={handleGoogleAuth}
+          className={styles.login_btn}
+        >
           <FontAwesomeIcon
             icon={faGoogle}
             shake
-          /> &nbsp;Login using Google
+          />{" "}
+          &nbsp;Login using Google
         </button>
         <br />
         <br />
-        <p>Create an Account <Link to={"/signup"}>Signup</Link></p>
+        <p>
+          Create an Account <Link to={"/signup"}>Signup</Link>
+        </p>
       </div>
     </div>
   );
