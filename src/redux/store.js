@@ -1,18 +1,11 @@
-import {legacy_createStore, applyMiddleware , combineReducers} from "redux"
-import thunk from "redux-thunk"
+import { legacy_createStore, applyMiddleware, combineReducers } from "redux";
+import thunk from "redux-thunk";
+import { login_reducer } from "./Login_store/login_reducer";
+import { signup_reducer } from "./Signup_store/signup_reducer";
 
+const store = legacy_createStore(
+  combineReducers({ login_reducer, signup_reducer }),
+  applyMiddleware(thunk)
+);
 
-const store = legacy_createStore()
-
-export default store
-
-
-//cart => ADD, REMOVE, INC QTY, DEC QTY
-//with localstorage
-
-//Auth => LOGIN, SIGNUP
-//with localstorage
-
-
-
-
+export default store;
