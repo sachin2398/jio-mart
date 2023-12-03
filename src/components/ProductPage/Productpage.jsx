@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import style from "./ProductPage.module.css";
 import { useNavigate, useParams } from "react-router-dom"
@@ -17,15 +17,94 @@ function valuetext(value) {
 
 const Productpage = () => {
     const [data, setData] = useState([]);
-    const [brand, setBrand] = useState("");
+    const [brand, setBrand] = useState([]);
+    const dataRef = useRef([])
+    const [refresh, setRefresh] = useState(false);
+    const [sort, setSort] = useState("")
+
+    const [value, setValue] = React.useState([5000, 100000]);
+    const [valueDis, setValueDis] = React.useState([3, 50]);
+
+    const clickOnInput = (val) => {
+        if (brand.includes(val)) {
+            let arr = brand.filter((e) => {
+                if (e != val) {
+                    return e;
+                }
+            })
+            setBrand(arr)
+        } else {
+            setBrand([...brand, val])
+        }
+        setRefresh(!refresh)
+    }
+
+
+    useEffect(() => {
+        if (brand.length) {
+            const newArray = dataRef.current.filter((e) => {
+                if (brand.includes(e.brand) && e.price >= value[0] && e.price <= value[1] && e.discount >= valueDis[0] && e.discount <= valueDis[1]) {
+                    // console.log(e.discount)
+                    return e
+                }
+            })
+            setData(newArray)
+        } else {
+            const newArray = dataRef.current.filter((e) => {
+                if (e.price >= value[0] && e.price <= value[1] && e.discount >= valueDis[0] && e.discount <= valueDis[1]) {
+                    // console.log(e.discount, valueDis[0])
+                    return e
+                }
+            })
+            setData(newArray)
+        }
+        setSort("")
+    }, [refresh, value, valueDis])
+
+    useEffect(() => {
+        if (sort == "asc") {
+            let arr = [...data]
+            arr.sort((a, b) => {
+                if (a.price < b.price) {
+                    return -1
+                } else if (a.price == b.price) {
+                    return 0
+                } else {
+                    return 1
+                }
+            })
+            setData(arr);
+        } else if (sort == "desc") {
+            console.log(sort)
+            let arr = [...data]
+            arr.sort((a, b) => {
+                if (a.price < b.price) {
+                    return 1
+                } else if (a.price == b.price) {
+                    return 0
+                } else {
+                    return -1
+                }
+            })
+            setData(arr);
+        } else {
+            setRefresh(!refresh)
+        }
+    }, [sort])
+
+
+    // useEffect(() => {
+    // }, [value])
+
+
 
     const navigate = useNavigate()
 
     const getData = async (url) => {
         try {
             const res = await axios.get(url);
-            // console.log(res.data);
             setData(res.data);
+            dataRef.current = res.data
         } catch (err) {
             console.log(err);
         }
@@ -39,8 +118,6 @@ const Productpage = () => {
 
     // console.log(brand);
 
-    const [value, setValue] = React.useState([5000, 70000]);
-    const [valueDis, setValueDis] = React.useState([3, 50]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -51,8 +128,6 @@ const Productpage = () => {
     };
 
 
-    // console.log(value);
-    // console.log(valueDis);
 
     return (
         <div className={style.product_page_container}>
@@ -72,7 +147,7 @@ const Productpage = () => {
                         <h2>Filters</h2>
 
                         <div>
-                            <h4>brands</h4>
+                            <h5>Brands</h5>
 
                             <label htmlFor="Apple">
                                 <input
@@ -80,7 +155,7 @@ const Productpage = () => {
                                     name="brand"
                                     value="Apple"
                                     onChange={(e) => {
-                                        setBrand(e.target.value);
+                                        clickOnInput(e.target.value);
                                     }}
                                 />{" "}
                                 Apple
@@ -93,7 +168,7 @@ const Productpage = () => {
                                     name="brand"
                                     value="Poco"
                                     onChange={(e) => {
-                                        setBrand(e.target.value);
+                                        clickOnInput(e.target.value);
                                     }}
                                 />{" "}
                                 Poco
@@ -106,7 +181,7 @@ const Productpage = () => {
                                     name="brand"
                                     value="Tecno"
                                     onChange={(e) => {
-                                        setBrand(e.target.value);
+                                        clickOnInput(e.target.value);
                                     }}
                                 />{" "}
                                 Tecno
@@ -119,20 +194,20 @@ const Productpage = () => {
                                     name="brand"
                                     value="OnePlus"
                                     onChange={(e) => {
-                                        setBrand(e.target.value);
+                                        clickOnInput(e.target.value);
                                     }}
                                 />{" "}
                                 One Plus
                             </label>
                             <br />
 
-                            <label htmlFor="Xiomi">
+                            <label htmlFor="Xiaomi">
                                 <input
                                     type="checkbox"
                                     name="brand"
-                                    value="Xiomi"
+                                    value="Xiaomi"
                                     onChange={(e) => {
-                                        setBrand(e.target.value);
+                                        clickOnInput(e.target.value);
                                     }}
                                 />{" "}
                                 Xiaomi
@@ -171,23 +246,69 @@ const Productpage = () => {
                         </div>
 
                         <hr />
+
+                        <div>
+                            <h5>Primary Camera</h5>
+
+                            <label htmlFor="Apple">
+                                <input
+                                    type="checkbox"
+                                />{" "}
+                                2 MP
+                            </label>
+                            <br />
+                            <label htmlFor="Apple">
+                                <input
+                                    type="checkbox"
+                                />{" "}
+                                64 MP
+                            </label>
+                            <br />
+                            <label htmlFor="Apple">
+                                <input
+                                    type="checkbox"
+                                />{" "}
+                                8 MP
+                            </label>
+                            <br />
+
+                            <hr />
+                        </div>
+                        <div>
+                            <h5>SIM Type</h5>
+
+                            <label htmlFor="Apple">
+                                <input
+                                    type="checkbox"
+                                />{" "}
+                                Single SIM
+                            </label>
+                            <br />
+                            <label htmlFor="Apple">
+                                <input
+                                    type="checkbox"
+                                />{" "}
+                                Dual SIM
+                            </label>
+                            <br />
+                        </div>
                     </div>
                 </div>
 
                 <div className={style.right_container}>
                     <div>
-                        <select>
+                        <select value={sort} onChange={(e) => { setSort(e.target.value) }} >
                             <option value="">
-                                Sort by: <b>Popularity</b>
+                                Sort by: Popularity
                             </option>
-                            <option value="asc">Price low to high</option>
+                            <option value="asc" >Price low to high</option>
                             <option value="desc">Price high to low</option>
                         </select>
                     </div>
                     <div className={style.product}>
                         {data.map((ele) => {
                             return (
-                                <div onClick={() => { navigate(`/Products/${ele.id}`) }}>
+                                <div key={ele.id} onClick={() => { navigate(`/Products/${ele.id}`) }}>
                                     <div className={style.imagediv}>
                                         <img src={ele.image} alt="image" className={style.pic} />
                                     </div>
