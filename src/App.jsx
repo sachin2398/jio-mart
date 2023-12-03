@@ -5,6 +5,7 @@ import './App.css'
 import Homepage from './pages/Homepage'
 import Navbar from './components/Navbar/Navbar'
 import AllRoutes from './allRoutes/AllRoutes'
+import { AddressItem } from './components/Cart/AddressItem'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
     <>
     <Navbar/>
      <AllRoutes/>
+     <AddressItem/>
     
     </>
   )
