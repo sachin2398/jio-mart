@@ -52,26 +52,26 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 *Home Page:*
-![Homepage](https://drive.google.com/uc?id=10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be)
+![Homepage](./Resource/Home.png)
 
 *Sign Up Page*
-![Register](https://drive.google.com/uc?id=1DRKkaWWDKZKVuljxpWlAsqgLj_9h8MVg)
+![Register](./Resource/Signup.png)
 
 
 *Login Page:*
-![login](https://drive.google.com/uc?id=1XPhkDgNK2Bm64MYYedd-v_ot44TnK1Uz)
+![login](./Resource/Login.png)
 
 *Product Page:*
-![product](https://drive.google.com/uc?id=1WbLpHN0Z9fO2R3mP1XFIcBAC5ps1vHCA)
+![product](./Resource/Product.png)
 
 *Single Product Page:*
-![Product Page](https://drive.google.com/uc?id=1Ye0kYm6bRXbHb7MS4sH11PQtcsrveBpQ)
+![Product Page](./Resource/ProductDetails.png)
 
 *Cart Page:*
-![cart](https://drive.google.com/uc?id=1wP2oAL7gPK255zjLoAwzNoVK9JsHhfj9)
+![cart](./Resource/cart.png)
 
 *My Account Page*
-![My Account](https://drive.google.com/uc?id=1t3iYbi3MZBq7aysg6yv_WzO3hA8HH3Fw)
+![My Account](./Resource/Account.png)
 
 
 
