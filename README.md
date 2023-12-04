@@ -52,33 +52,31 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 
-<ul list-style-type="square">
+*Home Page:*
+![Homepage]
+ (https://drive.google.com/file/d/10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be/view?usp=sharing)
 
-  <li><h1>Home Page</h1></br>
-  <div><img src="./Resource/Home.png" alt="home_page_img"/></div>
-  </br>
-  </br>
+*Sign Up Page*
+![register](https://drive.google.com/file/d/1DRKkaWWDKZKVuljxpWlAsqgLj_9h8MVg/view?usp=sharing)
 
-<li><h1>Signup Page</h1></li></br>
-  <div><img src="./Resource/Signup.png"  alt=""/></div>
-  </br></br>
-  
-<li><h1>Login Page</h1></li></br>
-  <div><img src="./Resource/Login.png"  alt=""/></div>
-  </br></br>
-<li><h1>Product Page </h1></li></br>
-  <div><img src="./Resource/Product.png"  alt=""/></div>
-  </br></br>
-<li><h1>Product Details Page </h1></li></br>
-  </br></br>
-  <div><img src="./Resource/ProductDetails.png"  alt=""/></div>
-  </br></br>
-<li><h1>Cart Page</h1></li></br>
-  <div><img src="./Resource/cart.png"  alt=""/></div>
- </br></br>
- <li><h1>My Account Page</h1></li></br>
-  <div><img src="./Resource/Account.png"  alt=""/></div>
- </br></br>
+
+*Login Page:*
+![login](https://drive.google.com/file/d/1XPhkDgNK2Bm64MYYedd-v_ot44TnK1Uz/view?usp=sharing)
+
+
+*Product Page:*
+![product](https://drive.google.com/file/d/1WbLpHN0Z9fO2R3mP1XFIcBAC5ps1vHCA/view?usp=sharing)
+
+
+*Single Product Page:*
+![indivisualpage](https://drive.google.com/file/d/1Ye0kYm6bRXbHb7MS4sH11PQtcsrveBpQ/view?usp=sharing)
+
+
+*Cart Page:*
+![cart](https://drive.google.com/file/d/1wP2oAL7gPK255zjLoAwzNoVK9JsHhfj9/view?usp=sharing)
+
+*My Account Page*
+![myAccounts](https://drive.google.com/file/d/1t3iYbi3MZBq7aysg6yv_WzO3hA8HH3Fw/view?usp=sharing)
 
 
 
