@@ -47,30 +47,34 @@ Technologies used in the project:
 
 ## 💻 Screenshots
 
-*Home Page:*
-![Homepage](./Resource/Home.png)
 
-*Sign Up Page*
-![register](./Resource/Signup.png)
+<ul list-style-type="square">
 
+  <li><h1>Home Page</h1></br>
+  <div><img src="./Resource/Signup.png" alt="home_page_img"/></div>
+  </br>
+  </br>
 
-*Login Page:*
-![login](./Resource/Login.png)
-
-
-*Product Page:*
-![product](./Resource/Product.png)
-
-
-*Single Product Page:*
-![indivisualpage](./Resource/ProductDetails.png)
-
-
-*Cart Page:*
-![cart](./Resource//cart.png)
-
-*My Account Page*
-![myAccounts](./Resource//Account.png)
+<li><h1>Signup Page</h1></li></br>
+  <div><img src="./Resource/Signup.png"  alt=""/></div>
+  </br></br>
+  
+<li><h1>Login Page</h1></li></br>
+  <div><img src="./Resource/Login.png"  alt=""/></div>
+  </br></br>
+<li><h1>Product Page </h1></li></br>
+  <div><img src="./Resource/Product.png"  alt=""/></div>
+  </br></br>
+<li><h1>Product Details Page </h1></li></br>
+  </br></br>
+  <div><img src="./Resource/ProductDetails.png"  alt=""/></div>
+  </br></br>
+<li><h1>Cart Page</h1></li></br>
+  <div><img src="./Resource/cart.png"  alt=""/></div>
+ </br></br>
+ <li><h1>My Account Page</h1></li></br>
+  <div><img src="./Resource/Account.png"  alt=""/></div>
+ </br></br>
 
 
 
