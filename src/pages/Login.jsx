@@ -1,8 +1,10 @@
-import React from 'react'
+import Login_jio from '../components/Login/Login_jio'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <>
+    <Login_jio/>
+    </>
   )
 }
 

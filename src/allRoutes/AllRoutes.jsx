@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Route, Routes } from 'react-router-dom'
 import Homepage from '../pages/Homepage'
 import ProductPage from '../pages/ProductPage'
@@ -12,8 +12,8 @@ const AllRoutes = () => {
   return (
     <Routes>
         <Route path="/" element={<Homepage/>}/>
-        <Route path="/products" element={<ProductPage/>}/>
-        <Route path="/Products/:id" element={<ProductDetails/>}/>
+         <Route path="/products" element={<ProductPage/>}/> 
+        <Route path="/products/:id" element={<ProductDetails/>}/> 
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/payment" element={<Payment/>}/>
