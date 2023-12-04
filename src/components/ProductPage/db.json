@@ -1,0 +1,228 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Blue Tide,Mobile Phone",
+            "price":16999,
+            "discount":15,
+            "image":"https://www.jiomart.com/images/product/original/492850035/oneplus-nord-ce-2-lite-5g-128-gb-6-gb-ram-blue-tide-mobile-phone-digital-o492850035-p591224603-0-202208112007.png?im=Resize=(360,360)",
+            "brand":"OnePlus"
+        }
+        ,
+        {
+            "id":2,
+            "title":"Tecno Pop 7 Pro 64 GB, 2 GB, Blue, Smartphone",
+            "price":5555,
+            "discount":30,
+            "image":"https://www.jiomart.com/images/product/original/494267971/tecno-pop-7-pro-64-gb-2-gb-blue-smartphone-digital-o494267971-p605156014-0-202309292014.jpeg?im=Resize=(360,360)",
+            "brand":"Tecno"
+        }
+        ,
+        {
+            "id":3,
+            "title":"Apple iPhone 15 128GB Blue",
+            "price":76900,
+            "discount":3,
+            "image":"https://www.jiomart.com/images/product/original/493839312/apple-iphone-15-128gb-blue-digital-o493839312-p604568766-0-202309141654.jpeg?im=Resize=(360,360)",
+            "brand":"Apple"
+        }
+        ,
+        {
+            "id":4,
+            "title":"Tecno Pop 7 Pro 64 GB, 2 GB, Green, Smartphone",
+            "price":6000,
+            "discount":15,
+            "image":"https://www.jiomart.com/images/product/original/494267985/tecno-pop-7-pro-64-gb-2-gb-green-smartphone-digital-o494267985-p605156133-0-202309292016.jpeg?im=Resize=(360,360)",
+            "brand":"Tecno"
+        }
+        ,
+        {
+            "id":5,
+            "title":"POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Forest Green, Smartphone",
+            "price":12400,
+            "discount":26,
+            "image":"https://www.jiomart.com/images/product/original/rvupsv5d47/poco-m6-pro-5g-6gb-ram-128gb-rom-forest-green-smartphone-product-images-orvupsv5d47-p604649212-0-202309191410.jpg?im=Resize=(360,360)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":6,
+            "title":"Apple iPhone 13 128 GB, Starlight",
+            "price":54900,
+            "discount":8,
+            "image":"https://www.jiomart.com/images/product/original/491997700/apple-iphone-13-128-gb-starlight-digital-o491997700-p590798551-0-202208221207.jpeg?im=Resize=(360,360)",
+            "brand":"Apple"
+        }
+        ,
+        {
+            "id":7,
+            "title":"POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone",
+            "price":12499,
+            "discount":26,
+            "image":"https://www.jiomart.com/images/product/original/rvqxs1lbdt/poco-m6-pro-5g-6gb-ram-128gb-rom-power-black-smartphone-product-images-orvqxs1lbdt-p604649284-0-202309191411.jpg?im=Resize=(360,360)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":8,
+            "title":"OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Black Dusk",
+            "price":16999,
+            "discount":15,
+            "image":"https://www.jiomart.com/images/product/original/492850038/oneplus-nord-ce-2-lite-5g-128-gb-6-gb-ram-black-dusk-mobile-phone-digital-o492850038-p591224604-0-202208112007.png?im=Resize=(360,360)",
+            "brand":"OnePlus"
+        }
+        ,
+        {
+            "id":9,
+            "title":"Poco C50 32 GB, 2 GB RAM, Royal Blue, Mobile Phone",
+            "price":5333,
+            "discount":40,
+            "image":"https://www.jiomart.com/images/product/original/493665023/poco-c50-32-gb-2-gb-ram-royal-blue-mobile-phone-digital-o493665023-p598034587-0-202302021807.jpeg?im=Resize=(360,360)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":10,
+            "title":"Redmi 12 4G 128 GB, 4 GB RAM, Black, Smartphone",
+            "price":9450,
+            "discount":38,
+            "image":"https://www.jiomart.com/images/product/original/493838718/redmi-12-4g-128-gb-4-gb-ram-black-smartphone-digital-o493838718-p603613231-0-202308041406.jpeg?im=Resize=(360,360)",
+            "brand":"Xiaomi"
+        }
+        ,
+        {
+            "id":11,
+            "title":"OnePlus 11R 5G 128 GB, 8 GB RAM, Sonic Black, Mobile Phone",
+            "price":40000,
+            "discount":10,
+            "image":"https://www.jiomart.com/images/product/original/493665197/oneplus-11r-5g-128-gb-8-gb-ram-sonic-black-mobile-phone-digital-o493665197-p598641964-0-202302211958.jpeg?im=Resize=(360,360)",
+            "brand":"OnePlus"
+        }
+        ,
+        {
+            "id":12,
+            "title":"Redmi 10A Sport 128 GB, 6 GB RAM, Charcoal Black, Mobile Phone",
+            "price":8500,
+            "discount":40,
+            "image":"https://www.jiomart.com/images/product/original/493177505/redmi-10a-sport-128-gb-6-gb-ram-charcoal-black-mobile-phone-digital-o493177505-p594886065-0-202210282126.jpeg?im=Resize=(360,360)",
+            "brand":"Xiaomi"
+        }
+        ,
+        {
+            "id":13,
+            "title":"Xiaomi Redmi 10 Prime 128 GB, 6 GB RAM, Astral White Mobile Phone",
+            "price":12999,
+            "discount":25,
+            "image":"https://www.jiomart.com/images/product/original/491997814/xiaomi-redmi-10-prime-128-gb-6-gb-ram-astral-white-smartphone-digital-o491997814-p590837911-0-202110292147.jpeg?im=Resize=(150,150)",
+            "brand":"Xiaomi"
+        }
+        ,
+        {
+            "id":14,
+            "title":"Redmi Note 11 64 GB, 4 GB RAM, Space Black, Mobile Phone",
+            "price":9399,
+            "discount":47,
+            "image":"https://www.jiomart.com/images/product/original/492849124/redmi-note-11-64-gb-4-gb-ram-graphite-gray-mobile-phone-digital-o492849124-p591224553-0-202204291508.jpeg?im=Resize=(360,360)",
+            "brand":"Xiaomi"
+        }
+        ,
+        {
+            "id":15,
+            "title":"Redmi Note 11s 128 GB, 8 GB RAM, Space Black, Mobile Phone",
+            "price":12999,
+            "discount":40,
+            "image":"https://www.jiomart.com/images/product/original/492849137/redmi-note-11s-128-gb-8-gb-ram-space-black-mobile-phone-digital-o492849137-p591224542-0-202208222112.jpeg?im=Resize=(360,360)",
+            "brand":"Xiaomi"
+        }
+        ,
+        {
+            "id":16,
+            "title":"Apple iPhone 14 128 GB, Yellow, Mobile Phone",
+            "price":62999,
+            "discount":10,
+            "image":"https://www.jiomart.com/images/product/original/493665804/apple-iphone-14-128-gb-yellow-mobile-phone-digital-o493665804-p599204060-0-202306282359.jpeg?im=Resize=(360,360)",
+            "brand":"Apple"
+        }
+        ,
+        {
+            "id":17,
+            "title":"OnePlus Nord CE3 5G 128GB, 8GB RAM, Aqua Surge, Mobile Phone",
+            "price":24999,
+            "discount":7,
+            "image":"https://www.jiomart.com/images/product/original/493838773/oneplus-nord-ce3-5g-128gb-8gb-ram-aqua-surge-mobile-phone-digital-o493838773-p603521088-0-202308022139.jpeg?im=Resize=(360,360)",
+            "brand":"OnePlus"
+        }
+        ,
+        {
+            "id":18,
+            "title":"POCO C55, Power Black, 6GB, 128GB, Smartphone",
+            "price":13999,
+            "discount":30,
+            "image":"https://www.jiomart.com/images/product/original/rvm0vrpc5t/poco-c55-power-black-6gb-128gb-smartphone-product-images-orvm0vrpc5t-p602194867-0-202306070543.jpg?im=Resize=(150,150)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":19,
+            "title":"POCO M6 Pro 5G, 6GB RAM, 128GB ROM, Power Black, Smartphone",
+            "price":12499,
+            "discount":26,
+            "image":"https://www.jiomart.com/images/product/original/rvqxs1lbdt/poco-m6-pro-5g-6gb-ram-128gb-rom-power-black-smartphone-product-images-orvqxs1lbdt-p604649284-0-202309191411.jpg?im=Resize=(360,360)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":20,
+            "title":"POCO X5 Pro 5G, 6 GB RAM, 128 GB ROM, Astral Black, Smartphone",
+            "price":23999,
+            "discount":10,
+            "image":"https://www.jiomart.com/images/product/original/rvhvu8ylco/poco-x5-pro-5g-6-gb-ram-128-gb-rom-astral-black-smartphone-product-images-orvhvu8ylco-p602512349-0-202306221239.jpg?im=Resize=(150,150)",
+            "brand":"Poco"
+        }
+        ,
+        {
+            "id":21,
+            "title":"OnePlus Nord CE 3 Lite 5G 256 GB, 8 GB RAM, Pastel Lime, Mobile Phone",
+            "price":21999,
+            "discount":10,
+            "image":"https://www.jiomart.com/images/product/original/493665925/oneplus-nord-ce-3-lite-5g-256-gb-8-gb-ram-pastel-lime-mobile-phone-digital-o493665925-p600340967-0-202304101447.jpeg?im=Resize=(360,360)",
+            "brand":"OnePlus"
+        }
+        ,
+        {
+            "id":22,
+            "title":"Tecno Camon 20, 8GB RAM, 256GB ROM, Serenity Blue, Smartphone",
+            "price":14999,
+            "discount":20,
+            "image":"https://www.jiomart.com/images/product/original/rvdod3x8px/tecno-camon-20-8gb-ram-256gb-rom-serenity-blue-smartphone-product-images-orvdod3x8px-p602996417-0-202307071404.jpg?im=Resize=(360,360)",
+            "brand":"Tecno"
+        }
+        ,
+        {
+            "id":23,
+            "title":"Tecno Camon 20 Pro 5G 128 GB, 8 GB RAM Blue, Mobile Phone",
+            "price":19999,
+            "discount":20,
+            "image":"https://www.jiomart.com/images/product/original/493838217/tecno-camon-20-pro-5g-128-gb-8-gb-ram-blue-mobile-phone-digital-o493838217-p603495286-0-202308021112.jpeg?im=Resize=(360,360)",
+            "brand":"Tecno"
+        }
+        ,
+        {
+            "id":24,
+            "title":"Tecno Phantom V Fold 5G, 256 GB 12 GB RAM, Black, Mobile Phone",
+            "price":88000,
+            "discount":10,
+            "image":"https://www.jiomart.com/images/product/original/493837837/tecno-phantom-v-fold-5g-256-gb-12-gb-ram-black-mobile-phone-digital-o493837837-p602744915-0-202306262115.jpeg?im=Resize=(360,360)",
+            "brand":"Tecno"
+        }
+        ,
+        {
+            "id":25,
+            "title":"Apple iPhone 15 Pro Max 256 GB, Blue Titanium",
+            "price":99000,
+            "discount":20,
+            "image":"https://www.jiomart.com/images/product/original/493839358/apple-iphone-15-pro-max-256-gb-blue-titanium-digital-o493839358-p604576529-0-202309141710.jpeg?im=Resize=(360,360)",
+            "brand":"Apple"
+        }
+    ]
+}
