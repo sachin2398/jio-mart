@@ -56,26 +56,32 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 *Home Page:*
-![Homepage](./Resource/Home.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/6238f7c8-711a-44d4-b8c1-80ff519818ff)
+
 
 *Sign Up Page*
-![Register](./Resource/Signup.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/2fcc36c5-9519-4d85-8ec3-bea2b9d29f09)
+
 
 
 *Login Page:*
-![login](./Resource/Login.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/7f488a43-c185-4b93-9219-822c8729af37)
+
 
 *Product Page:*
-![product](./Resource/Product.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/9706a40a-dd9f-4818-81d1-43c26be8ca81)
+
 
 *Single Product Page:*
-![Product Page](./Resource/ProductDetails.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/28cd6c6b-6226-4bf4-8818-d677c11f7bad)
+
 
 *Cart Page:*
-![cart](./Resource/cart.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/29e407b7-1728-4716-a311-9f59b6b2637c)
+
 
 *My Account Page*
-![My Account](./Resource/Account.png)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/01f10435-0e0f-42bf-8137-d695e539f862)
 
 
 
