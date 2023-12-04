@@ -3,18 +3,17 @@ import { SIGNUP_ERROR, SIGNUP_REQUEST, SIGNUP_SUCCESS } from "./actionType";
 const init = {
   userName: "",
   userEmail: "",
+  error_msg: null,
 };
 
 export const signup_reducer = (state = init, { type, payload }) => {
   switch (type) {
     case SIGNUP_REQUEST:
-      return { ...state };
+      return { ...state ,error_msg:null};
     case SIGNUP_SUCCESS:
-      console.log(payload);
       return { userEmail: payload.email, userName: payload.userName };
     case SIGNUP_ERROR:
-      alert(payload)
-      return { userEmail: "", userName: "" };
+      return { userEmail: "", userName: "", error_msg: payload };
     default:
       return { ...state };
   }

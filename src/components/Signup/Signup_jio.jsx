@@ -15,6 +15,7 @@ function Signup_jio() {
   let [userName, setUserName] = useState();
   let dispatch = useDispatch();
   let isauth = useSelector((store) => store.login_reducer.isAuth);
+  let errormsg = useSelector((store) => store.signup_reducer.error_msg);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -57,6 +58,7 @@ function Signup_jio() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <br />
+          {errormsg && <p style={{ color: "red" }}>{errormsg}</p>}
           <br />
           <button
             type="submit"

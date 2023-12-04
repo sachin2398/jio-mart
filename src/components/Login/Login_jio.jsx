@@ -11,6 +11,7 @@ function Login_jio() {
   let [email, setEmail] = React.useState();
   let [password, setPassword] = React.useState();
   let isauth = useSelector((store) => store.login_reducer.isAuth);
+  let errormsg = useSelector((store) => store.login_reducer.error_msg);
 
   let dispatch = useDispatch();
 
@@ -55,6 +56,7 @@ function Login_jio() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <br />
+         {errormsg && <p style={{color:"red"}}>{errormsg}</p>}
           <br />
           <button
             type="submit"

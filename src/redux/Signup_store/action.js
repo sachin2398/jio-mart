@@ -31,7 +31,6 @@ export const signup = (email, password, userName) => async (dispatch) => {
     let res = await createUserWithEmailAndPassword(auth, email, password);
     dispatch(setLoginSuccess(res.user.accessToken));
     dispatch(setSignupSuccess({ email, userName }));
-    console.log(res);
   } catch (error) {
     dispatch(setSignupError(error.message));
   }
