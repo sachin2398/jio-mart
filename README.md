@@ -52,10 +52,11 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 *Home Page:*
-![Homepage](https://drive.google.com/uc?id=10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be)
+![Homepage](https://drive.google.com/file/d/10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be/view?usp=sharing)
 
 *Sign Up Page*
-![register](https://drive.google.com/uc?id=1DRKkaWWDKZKVuljxpWlAsqgLj_9h8MVg)
+![register](https://drive.google.com/file/d/1DRKkaWWDKZKVuljxpWlAsqgLj_9h8MVg/view?usp=sharing)
+
 
 *Login Page:*
 ![login](https://drive.google.com/uc?id=1XPhkDgNK2Bm64MYYedd-v_ot44TnK1Uz)
@@ -64,13 +65,13 @@ Technologies used in the project:
 ![product](https://drive.google.com/uc?id=1WbLpHN0Z9fO2R3mP1XFIcBAC5ps1vHCA)
 
 *Single Product Page:*
-![individualpage](https://drive.google.com/uc?id=1Ye0kYm6bRXbHb7MS4sH11PQtcsrveBpQ)
+![individualpage](https://drive.google.com/file/d/1Ye0kYm6bRXbHb7MS4sH11PQtcsrveBpQ/view?usp=sharing)
 
 *Cart Page:*
 ![cart](https://drive.google.com/uc?id=1wP2oAL7gPK255zjLoAwzNoVK9JsHhfj9)
 
 *My Account Page*
-![myAccounts](https://drive.google.com/uc?id=1t3iYbi3MZBq7aysg6yv_WzO3hA8HH3Fw)
+![myAccounts](https://drive.google.com/file/d/1t3iYbi3MZBq7aysg6yv_WzO3hA8HH3Fw/view?usp=sharing)
 
 
 
