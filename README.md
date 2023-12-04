@@ -54,7 +54,8 @@ Technologies used in the project:
 
 *Home Page:*
 ![Homepage]
- (https://drive.google.com/file/d/10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be/view?usp=sharing)
+<img src="https://drive.google.com/file/d/10bhbmoWIvM7bIzmThZ12xiZI5B0rH7Be/view?usp=sharing" alt="home">
+
 
 *Sign Up Page*
 ![register](https://drive.google.com/file/d/1DRKkaWWDKZKVuljxpWlAsqgLj_9h8MVg/view?usp=sharing)
