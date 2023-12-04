@@ -1,8 +1,10 @@
-import React from 'react'
+import Signup_jio from '../components/Signup/Signup_jio'
 
 const Signup = () => {
   return (
-    <div>Signup</div>
+    <div>
+      <Signup_jio />
+    </div>
   )
 }
 
