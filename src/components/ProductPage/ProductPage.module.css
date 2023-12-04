@@ -1,0 +1,144 @@
+.product_page_container {
+  /* border: 1px solid red; */
+  max-width: 1280px;
+  margin: auto;
+}
+.address {
+  padding: 10px 0;
+}
+
+.main_container {
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* display: flex; */
+}
+
+.main_container > div {
+  /* border: 1px solid blue; */
+}
+.left_container {
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+
+.left_container > div {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  padding: 20px;
+  position: sticky;
+  top: 10px;
+}
+
+.right_container > div:first-child {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+  padding: 15px 0;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  width: 95%;
+}
+
+.right_container > div:first-child > select {
+  width: 35%;
+  border: 1px solid rgb(234, 232, 232);
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.line_through {
+  text-decoration: line-through;
+  font-weight: 300;
+}
+.line_through + span {
+  background-color: rgb(228, 255, 246);
+  padding: 0 5px;
+  color: green;
+  font-weight: 500;
+}
+
+.right_container > .product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  padding: 30px;
+}
+.right_container > .product > div {
+  border: 1px solid rgb(197, 197, 197);
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.titlePic p > b {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.titlePic p {
+  margin: 0;
+  padding: 3px 0;
+}
+
+.pic {
+  width: 100%;
+  height: 20vw;
+  object-fit: contain;
+}
+
+.slider {
+  margin-top: 20px;
+}
+.product_page_container img[alt="flash"] {
+  margin-left: -3px;
+}
+
+@media screen and (width<=1050px) {
+  .right_container > .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pic {
+    height: 30vw;
+  }
+
+  .titlePic {
+    color: rgb(8, 8, 15);
+    font-weight: 500;
+  }
+
+  .main_container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (width<=700px) {
+  .right_container > .product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pic {
+    height: 40vw;
+  }
+  .main_container {
+    grid-template-columns: 1fr;
+  }
+  .right_container > div:first-child {
+    position: static;
+  }
+  .product > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+  }
+  .product > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left_container {
+    display: none;
+  }
+}
