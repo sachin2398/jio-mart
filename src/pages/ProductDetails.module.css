@@ -1,0 +1,196 @@
+.parentwrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding-top: 2rem;
+    background-color: #ffff;
+  }
+  
+  .topsectionwrapper{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .bottomsectionwrapper{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .imgwrapper{
+    display: flex;
+  }
+  
+  .imgdetailswrapper{
+    width: 25%;
+  }
+  
+  .detailsimg{
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 17%;
+    border-radius:42px;
+  }
+  
+  .mainimgwrapper{
+    margin-top: 20px;
+    height:50%;
+    width: 50%;
+    margin-left: 15%;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+  }
+  /* product details css */
+  .produtdetailwrapper{
+    padding: 3%;
+  }
+  
+  .produtdetailwrapper h1 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  
+  .produtdetailwrapper h3 {
+    color: gray;
+  }
+  
+  .produtdetailwrapper h2 {
+    color: green;
+    font-weight: bolder;
+  }
+  
+  .produtdetailwrapper p {
+    font-size: 1.1rem;
+  }
+  
+  .paymentlogo{
+    margin-top: 2%;
+    display: flex;
+  }
+  .paymentlogo p {
+    font-size: 10px;
+    color: gray;
+  }
+  .submit{
+    padding: 15px;
+    background-color: #318CE7;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+  }
+  #btn {
+    width: 200px;
+    height: 30px;
+    border: none;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 15px;
+    background-color: #318CE7;
+  }
+  
+  /* middle section CSS */
+  .middlesectionwrapper{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: auto;
+    border-bottom: 1px solid gray;
+  }
+  
+  .headingwrapper{
+    width: 100%;
+    height: 50px;
+  }
+  
+  .headingwrapper h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  .descriptionpara{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .descriptionpara h3 {
+    font-weight: bolder;
+  }
+  
+  .ratingstars{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: gray;
+  }
+  .iconstar{
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    color: rgb(81, 79, 79);
+  }
+  .iconstar1{
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    color: gray;
+  }
+  
+  .ratingbtn{
+    margin: 3%;
+    margin-left: 5%;
+    height: 50px;
+    color: rgb(60, 58, 58);
+    font-weight: bolder;
+    width: 20%;
+    background-color: rgb(170, 165, 165);
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 640px) { 
+    .parentwrapper{
+      width: 100%;
+      height: auto;
+      margin-top: 15%;
+      padding-top: 2rem;
+      background-color: #ffff;
+    }
+    .topsectionwrapper{
+      width: 90%;
+      margin: auto;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+    }
+    .imgwrapper{
+      height: 50%;
+      border-bottom: 1px solid gray;
+    }
+    .produtdetailwrapper{
+      height: 50%;
+    }
+  
+    .produtdetailwrapper h1 {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  
+  
