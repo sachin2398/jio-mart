@@ -1,0 +1,90 @@
+.productPage{
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    gap:2rem;
+}
+.productPage> .options{
+    width: 20%;
+}
+.options{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 20px;
+    border-right-color: 1px solid grey;
+}
+.productPage > .products{
+    width: 80%;
+}
+.products{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    padding: 2rem;
+}
+.singleProduct{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    object-fit: cover;
+    margin: 0.7rem;
+    border-radius: 10px;
+}
+.singleProduct > img{
+    height: 150px;
+}
+.sortData>label,.sortData>input :hover{
+
+    cursor: pointer;
+}
+
+.singleProduct > img{
+    cursor: pointer;
+}
+
+@media all and (max-width:1300px) and (min-width:728px){
+    
+    .singleProduct{
+        height: 260px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .productPage> .options{
+        width: 17%;
+        padding: 1rem 1rem 0 3rem;
+    }
+    .productPage{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media all and (max-width:727px) and (min-width:200px){
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 1rem;
+    }
+    .productPage> .options{
+        width: 15%;
+        padding: 0.5rem;
+    }
+    .productPage{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .options{
+        margin-left: 60px;
+    }
+}
