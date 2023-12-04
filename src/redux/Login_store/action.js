@@ -23,9 +23,10 @@ export const setLoginSuccess = (payload) => {
   };
 };
 
-const setLoginError = () => {
+const setLoginError = (payload) => {
   return {
     type: LOGIN_ERROR,
+    payload:payload
   };
 };
 
@@ -35,8 +36,7 @@ export const signin = (email, password) => async (dispatch) => {
     let res = await signInWithEmailAndPassword(auth, email, password);
     dispatch(setLoginSuccess(res.user.accessToken));
   } catch (error) {
-    dispatch(setLoginError());
-    alert(error.message);
+    dispatch(setLoginError(error.message));
   }
 };
 
@@ -44,10 +44,8 @@ export const signin_G = () => async (dispatch) => {
   dispatch(setLoginRequest());
   try {
     let res = await signInWithPopup(auth, googleProvider);
-    console.log(res)
     dispatch(setLoginSuccess(res.user.accessToken));
   } catch (error) {
-    dispatch(setLoginError());
-    alert(error.message);
+    dispatch(setLoginError(error.message));
   }
 };
