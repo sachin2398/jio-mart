@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-// import { GiHamburgerMenu } from "react-icons/gi";
-// import { FaUser } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaUser } from "react-icons/fa";
 import Style from "./Navbar.module.css";
-// import { BsFillCartFill } from "react-icons/bs";
-// import { MdLocationOn } from "react-icons/md";
-// import { AiOutlineDown } from "react-icons/ai";
+import { BsFillCartFill } from "react-icons/bs";
+import { MdLocationOn } from "react-icons/md";
+import { AiOutlineDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useState, useRef, useCallback } from "react";
 import {useNavigate} from "react-router-dom"
@@ -42,7 +42,9 @@ export const Navbar = () => {
  })
 // console.log(state)
 const {userData,isAuth}=state;
-const {Fname, Lname,email}=userData;
+const Fname = userData ? userData.Fname : null;
+  const Lname = userData ? userData.Lname : null;
+  const email = userData ? userData.email : null;
 
 console.log(state);
 console.log(isAuth)
@@ -178,8 +180,8 @@ console.log(isAuth)
         <div>
           <Link to={"/"}>
             <img
-              width="190px"
-              src="https://i.ibb.co/4fVGyP3/Octagon-1-removebg-preview.png" alt="Octagon"
+              width="100px"
+              src="https://www.jiomart.com/assets/ds2web/images/jiomart-logo.svg?v=24" alt="Octagon"
             />
           </Link>
         </div>
@@ -195,10 +197,10 @@ console.log(isAuth)
         <div className={Style.userdiv}>
           <FaUser className={Style.usericons} />
           {isAuth?<h4 style={{"color":"white"}}>{Fname.toUpperCase()}</h4>:<><h4>
-            <Link   to={"/user/login"}><p style={{"color":"white"}}>Sign In / </p></Link>
+            <Link   to={"/user/login"}><p style={{"color":"white" }} className={Style.cool}>Sign In / </p></Link>
           </h4>
           <h4>
-            <Link to={"/user/signup"}><p  style={{"color":"white"}}>Sign Up</p></Link>
+            <Link to={"/user/signup"}><p  style={{"color":"white"}} className={Style.cool}>Sign Up</p></Link>
           </h4></>}
         </div>
 
@@ -206,7 +208,7 @@ console.log(isAuth)
           <BsFillCartFill className={Style.carticon} />
           <h4>
             {/* <Link to={"/cartpage"}>Cart</Link> */}
-            <p onClick={Click} style={{"color":"white","cursor":"pointer"} }>Cart</p>
+            <p onClick={Click} style={{"color":"white","cursor":"pointer"}} className={Style.cools} >Cart</p>
             
           </h4>
         </div>

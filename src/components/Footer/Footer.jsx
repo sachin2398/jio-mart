@@ -1,78 +1,47 @@
-import React from 'react'
-import stylefoot from "./Footer.module.css"
+import  Styles  from "../Footer/Footer.module.css";
 
+export const Footer = () =>{
 
-
-export const Footer = () => {
-  return (
-    <div className={stylefoot.footermaindiv}>
-   
-               {/* 1st div */}
-     <div className={stylefoot.secondfooter}>
-   
-      <div className={stylefoot.divone}>
-        <ul>
-            <li style={{marginBottom:"5px"}}><h2>MOST POPULAR CATEGORIES</h2></li>
-            <li>Staples</li>
-            <li>Beverages</li>
-            <li>Personal Care</li>
-            <li>Home Care</li>
-            <li>Fruits & Vegetables</li>
-            <li>Baby Care</li>
-            <li>Snacks & Branded Foods</li>
-            <li>Dairy & Bakery</li>
-        </ul>
-      </div>
-
-
-      <div className={stylefoot.divone}>
-      <ul>
-            <li style={{marginBottom:"5px"}}><h2>CUSTOMER SERVICES</h2></li>
-            <li>About Us</li>
-            <li>FAQ</li>
-            <li>Terms and conditions</li>
-            <li>Privacy policy</li>
-            <li>E-waste Policy</li>
-            <li>Cancellation and return policy</li>
-
-        </ul>
-      </div>
-
-
-
-      <div className={stylefoot.contactfooterdiv}>
-         <h2> CONTACT US</h2>
-           <div>
-            WhatsApp us : <span style={{color:"#008ecc"}}>70003 700003</span>
-           </div>
-
-           <div>
-            Call us : <span style={{color:"#008ecc"}}>1800 890 1222</span>
-           <p> 8:00Am to 8:00PM, 365 days</p>
-           </div>
-
-           <div>
-          <p style={{fontSize:"13px"}} > Please note that you are accessing the BETA Version of <span style={{color:"#008ecc", fontSize:"13px"}}>www.jiomart.com</span></p>
-           </div>
-
-           <div>
-          <p style={{fontSize:"13px"}} >Should you encounter any bugs, glitches, lack of functionality, delayed deliveries, billing errors or other problems on the beta website, please email us on  <span style={{color:"#008ecc", fontSize:"13px"}}>cs@jiomart.com</span></p>
-           </div>
-
-      </div>
-
-
-     </div>
-
-
-   <div className={stylefoot.lastdivfooter}>
-
-    <div>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</div>
-    <div>© 2022 All rights reserved. Reliance Retail Ltd.</div>
-
-
-   </div>
-
-     </div>
-  )
+    return (
+        <div className={Styles.footer}>
+            <div>
+                <div>
+                    <h4>MOST POPULAR CATEGORIES</h4>
+                    <li>Staples</li>
+                    <li>Beverages</li>
+                    <li>Personal Care</li>
+                    <li>Home Care</li>
+                    <li>Fruits and Vegetables</li>
+                    <li>Baby Care</li>
+                    <li>Snacks & Branded Foods</li>
+                    <li>Dairy & Bakery</li>
+                </div>
+                <div>
+                    <h4>CUSTOMER SERVICES</h4>
+                    <li>About Us</li>
+                    <li>FAQ</li>
+                    <li>Terms and conditions</li>
+                    <li>Privacy policy</li>
+                    <li>E-waste Policy</li>
+                    <li>Cancellation and return policy</li>
+                </div>
+                <div>
+                    <h4>CONTACT US</h4>
+                    <p>WhatsApp us : <span> 70003 70003</span></p>
+                    <p>Call Us : <span> 1800 890 1222</span> <br /> 8:00 AM to 8:00 PM, 365 days</p>
+                    <p>Please note that you are accessing the <br /> BETA Version of www.jiomart.com</p>
+                    <p>Should you encounter any bugs, glitches, lack <br /> of functionality, delayed deliveries, billing errors <br /> or other problems on the beta website, please <br /> email us on <span> cs@jiomart.com</span></p>
+                    <h4>DOWNLOAD APP</h4>
+                    <div style={{display:'flex', justifyContent:"space-evenly"}}>
+                    <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="" />
+                    <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</div>
+                <div>© 2022 All rights reserved. Reliance Retail Ltd.</div>
+            </div>
+        </div>
+    )
 }

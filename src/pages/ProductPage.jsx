@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import style from "./ProductPage.module.css";
+import style from "../pages/ProductPage.module.css";
 import { Link } from "react-router-dom";
-import percentage from "./images/percentageIcon.svg";
-import flash from "./images/flash.svg";
+import percentage from "../components/images/percentageIcon.svg";
+import flash from "../components/images/flash.svg";
 
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
@@ -180,7 +180,7 @@ const Productpage = () => {
                     <div className={style.product}>
                         {data.map((ele) => {
                             return (
-                                <Link to={`/product/${ele.id}`} key={ele.id}>
+                                <Link to={`/products/${ele.id}`} key={ele.id}>
                                 <div>
                                     <div className={style.imagediv}>
                                         <img src={ele.image} alt="image" className={style.pic} />
@@ -213,4 +213,4 @@ const Productpage = () => {
     );
 };
 
-export default Productpage;
+export default Productpage ;

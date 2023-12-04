@@ -4,6 +4,7 @@
     top:0;
     z-index: 100;
     width:100%;
+
 }
 
 .navbar{
@@ -12,9 +13,9 @@
     box-sizing: border-box;
     background: #008ecc;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap:40px;
+    gap:70px;
     position: relative;
     top:0;
 }
@@ -44,6 +45,7 @@
     gap:5px;
 }
 
+
 .cartNav{
     display: flex;
     justify-content: center;
@@ -67,12 +69,13 @@
 #newnav{
     width:100%;
     height:auto;
+    padding: 12px;
     background-color: #f1efef;
 /* border: 2px solid red; */
      display: flex;
      align-items: center;
    justify-content: center;
-   gap:80px;
+   gap:60px;
 }  
 
  .locationdiv{
@@ -87,6 +90,7 @@
    align-items: center;
    border: none;
    gap:1px;
+   
 
 }
 .locationIcon{
@@ -98,6 +102,15 @@
     font-weight: 600;
     font-size: 15px;
     /* margin-top: 2px; */
+}
+
+.cool{
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cools{
+    margin-top: 20px;
 }
 
 .dropdown{
