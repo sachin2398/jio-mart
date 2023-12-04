@@ -51,7 +51,7 @@ Technologies used in the project:
 <ul list-style-type="square">
 
   <li><h1>Home Page</h1></br>
-  <div><img src="./Resource/Signup.png" alt="home_page_img"/></div>
+  <div><img src="./Resource/Home.png" alt="home_page_img"/></div>
   </br>
   </br>
 
