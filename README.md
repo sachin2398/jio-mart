@@ -10,7 +10,11 @@ This project was built during our construct week at Masai School. It was built b
 
 *Front-end deployed URL:*
 
-https://jiomart-com-rct-201-shashikantrupin.vercel.app/
+
+
+
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/7f168750-cedb-4178-9634-a71afd195933)
+
 
 ## Presentation Video
 
