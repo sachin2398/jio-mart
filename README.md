@@ -10,7 +10,11 @@ This project was built during our construct week at Masai School. It was built b
 
 *Front-end deployed URL:*
 
+https://jiomart-com-rct-201-shashikantrupin.vercel.app/
 
+## Presentation Video
+
+https://drive.google.com/file/d/1CvqJYCjHZGaIMumc6OYKy9TJ9S913F3H/view?usp=sharing
 
 ## GitHub Repoitory Link
 
