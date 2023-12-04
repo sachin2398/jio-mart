@@ -13,7 +13,7 @@ This project was built during our construct week at Masai School. It was built b
 
 
 
-![image](https://github.com/sachin2398/jio-mart/assets/89017179/7f168750-cedb-4178-9634-a71afd195933)
+[![image](https://github.com/sachin2398/jio-mart/assets/89017179/7f168750-cedb-4178-9634-a71afd195933)](https://jiomart-com-rct-201-shashikantrupin.vercel.app/)
 
 
 ## Presentation Video
@@ -56,7 +56,8 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 *Home Page:*
-![image](https://github.com/sachin2398/jio-mart/assets/89017179/6238f7c8-711a-44d4-b8c1-80ff519818ff)
+![image](https://github.com/sachin2398/jio-mart/assets/89017179/568bfefe-425a-4ee4-b624-a5c0ba6312ed)
+
 
 
 *Sign Up Page*
